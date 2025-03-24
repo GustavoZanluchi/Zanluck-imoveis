@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanluck Imóveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Antic Didone', serif; 
+            font-style: inherit;
+            font-size: x-large;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            color: rgb(255, 255, 255);
+            background-image: url('https://www.remaza.com.br/uploads/a460a963-5b8c-4b48-8ac2-f9dbbe3173ea/header-blog-casa-em-condominio-fechado-remaza.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.356); 
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 70px;
+            position: relative;
+        }
+
+        .login-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #000000a6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #000000;
+        }
+
+        main {
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            justify-content: center;
+            max-width: 1250px;
+            width: 100%;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 7%;
+            width: 23%;            
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .box:hover{
+            background-color: #030303e1;
+        }
+
+        .box img {
+            width: 5%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;  
+               
+        }
+        
+        footer {
+            background: rgba(3, 3, 3, 0.562);
+            color: rgb(250, 250, 250);
+            text-align: center;
+            padding: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 601px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Zanluck Imóveis
+        <button class="login-btn">Login</button> 
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box"> Locação</div>
+            <div class="box"> Compra</div>
+            <div class="box"> Venda</div>
+        </div>
+    </main>
+
+    <footer>© 2025 - Todos os direitos reservados</footer>
+
+</body>
+</html>

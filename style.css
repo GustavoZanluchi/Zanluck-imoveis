@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Antic Didone', serif; 
-    font-style: inherit;
     font-size: x-large;
     display: flex;
     flex-direction: column;
@@ -21,26 +20,49 @@ body {
 header {
     background: rgba(255, 255, 255, 0.356); 
     color: rgb(0, 0, 0);
-    padding: 30px;
-    text-align: center;
-    font-size: 70px;
-    position: relative;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.login-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 12px 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 520px;
+    height: 45px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-btn, .login-btn {
     background-color: #000000a6;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 13px 23px;
+    font-size: 15px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
-.login-btn:hover {
+.nav-btn:hover, .login-btn:hover {
     background-color: #000000;
 }
 
@@ -53,31 +75,9 @@ main {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    justify-content: center;
+    text-align: center;
     max-width: 1250px;
     width: 100%;
-}
-
-.box {
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 7%;
-    width: 23%;            
-    border-radius: 25px;
-    text-align: center;
-}
-
-.box:hover {
-    background-color: #030303e1;
-}
-
-.box img {
-    width: 5%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;  
 }
 
 footer {
@@ -89,26 +89,22 @@ footer {
 
 @media (max-width: 600px) {
     header {
-        font-size: 18px;
-        padding: 15px;
-    }
-
-    .container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    .box {
-        width: 90%;
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 601px) {
-    .container {
-        flex-wrap: wrap;
+    .header-left {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .box {
-        width: 45%;
+    .search-bar {
+        width: 100%;
+    }
+
+    .header-right {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
     }
 }

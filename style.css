@@ -42,8 +42,9 @@ header {
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 520px;
+    width: 500px;
     height: 45px;
+    transition: whidth 0.3s ease-in-out;
 }
 
 .header-right {
@@ -87,24 +88,27 @@ footer {
     padding: 5px;
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
+@media (max-width: 1024px) and (min-width: 601px) {
     .header-left {
-        flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .search-bar {
-        width: 100%;
+        width: 200px; 
     }
 
     .header-right {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .nav-btn, .login-btn {
+        padding: 10px 20px;
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 700px) {
+    .search-bar {
+        width: 600%; 
     }
 }

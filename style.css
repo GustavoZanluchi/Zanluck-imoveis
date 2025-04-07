@@ -9,48 +9,22 @@ body {
     font-size: x-large;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-    color: rgb(255, 255, 255);
-    background-image: url('https://www.remaza.com.br/uploads/a460a963-5b8c-4b48-8ac2-f9dbbe3173ea/header-blog-casa-em-condominio-fechado-remaza.png'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
+    min-height: 100vh;  
 }
 
 header {
-    background: rgba(153, 152, 152, 0.336); 
+    background: rgba(223, 223, 223, 0.568); 
     color: rgb(0, 0, 0);
-    padding: 40px;
+    padding: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    border-bottom: 1px solid black;
 }
 
 .logo {
     font-size: 55px;
     font-weight: bold;
-}
-
-.search-bar {
-    padding: 12px 12px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 500px;
-    height: 45px;
-    transition: width 0.3s ease-in-out;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 30px;
 }
 
 .nav-btn, .login-btn {
@@ -63,22 +37,152 @@ header {
     cursor: pointer;
 }
 
-.nav-btn:hover, .login-btn:hover {
-    background-color: #000000; 
+.hero-imagem {
+    background-image: url('https://img.freepik.com/fotos-premium/casa-grega-com-terraco-e-vista-mar-arquitetura-branca-na-ilha-de-santorini-grecia-linda-paisagem-de-verao_545689-7485.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 0px;
+    z-index: 1;
+    gap: 15px;
+
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.search-bar {
+    padding: 12px 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 1100px;
+    height: 45px;
+    transition: width 0.3s ease-in-out;
+    align-self: stretch;
+}
+
+.search-buttons {
+    position: absolute;
+    top: 520px;
+    left: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+
+.search-option {
+    padding: 12px 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    text-align: left;
+}
+
+.search-option:hover {
+    background-color: #ffffff80;
 }
 
 main {
     flex: 1 1 auto; 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
-.container {
-    text-align: center;
-    max-width: 1250px;
-    width: 100%;
+.imagem-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-left: 10px;
+    gap: 20px; 
+}
+
+.imagem-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #00000063;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+    padding: 10px;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem-box:hover {
+    background-color: #8f8e8ea4;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.imagem-box img {
+    width: 170px;
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.imagem-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.imagem-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.preco {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.status {
+    font-size: 16px;
+    color: #000000;
 }
 
 footer {
@@ -88,6 +192,8 @@ footer {
     padding: 5px;
     color: #ffffff;
 }
+
+
 
 @media (max-width: 1024px) and (min-width: 601px) {
     .header-left {

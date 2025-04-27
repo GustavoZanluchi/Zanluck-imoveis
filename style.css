@@ -5,17 +5,16 @@
 }
 
 body {
-    font-family: 'Antic Didone', serif; 
-    font-size: x-large;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  
+    min-height: 100vh;
 }
 
 header {
-    background: rgba(223, 223, 223, 0.568); 
-    color: rgb(0, 0, 0);
-    padding: 28px;
+    background: rgba(223, 223, 223, 0.568);
+    padding: 32px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,204 +22,226 @@ header {
 }
 
 .logo {
-    font-size: 55px;
+    font-family: 'Antic Didone', serif;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
-.nav-btn, .login-btn {
-    background: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
+.nav-btn {
+    background: transparent;
+    color: black;
     border: none;
-    padding: 11px 23px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 1rem;
     border-radius: 15px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.nav-btn:hover, .login-btn:hover {
+.nav-btn:hover {
     background-color: #ffffff98;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
+.login-btn {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #3498db;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #4da4df;
+}
 .hero-imagem {
-    background-image: url('https://img.freepik.com/fotos-premium/casa-grega-com-terraco-e-vista-mar-arquitetura-branca-na-ilha-de-santorini-grecia-linda-paisagem-de-verao_545689-7485.jpg');
+    background-image: url('imagens/casas\ interior\ 1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 800px;
+    height: 85vh;
     width: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.central-search{
+.central-search {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 20px;
-    border-radius: 0px;
-    z-index: 1;
-    gap: 15px;
-
-}
-
-.search-container {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     width: 100%;
+    padding: 0 5%;
+}
+
+.top-search-button {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 
 .search-bar {
-    padding: 12px 12px;
-    font-size: 18px;
-    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 1200px;
+    padding: 12px;
+    font-size: 1rem;
     border-radius: 5px;
-    width: 1100px;
-    height: 45px;
-    transition: width 0.3s ease-in-out;
-    align-self: stretch;
+    border: 1px solid #ccc;
 }
 
 .search-buttons {
-    position: absolute;
-    top: 520px;
-    left: 260px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    z-index: 1;
-
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .search-option {
-    padding: 12px 10px;
-    font-size: 16px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border: #000000;
-    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 7px;
+    border: 1px solid #cccccc00;
+    font-size: 1rem;
+    width: 180px;
     cursor: pointer;
-    transition:  0.3s ease;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 200px;
-    text-align: left;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.search-option:hover {
-    background-color: #ffffffd8;
+.top-search-text {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.top-search-subtext {
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.search-button {
+    background-color: #3498db;
+    color: white;
+    padding: 17px 40px; 
+    border-radius: 12px; 
+    font-size: 1rem; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.search-button.buscar-imoveis:hover {
+    background-color: #4da4df;
+}
+
+.buscar-imoveis {
+    font-weight: bold;
 }
 
 main {
-    flex: 1 1 auto; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 50px;
+    flex: 1;
+    padding: 40px 5%;
 }
 
 .imagem-box-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 10px;
-    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .imagem-box {
     display: flex;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #00000063;
+    flex-direction: row;
+    background: white;
     border-radius: 10px;
-    overflow: hidden;
-    width: 600px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 600px;
     padding: 10px;
     gap: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .imagem-box:hover {
-    background-color: #8f8e8ea4;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+    background-color: #302f2f50;
 }
 
 .imagem-box img {
-    width: 170px;
-    height: 130px;
+    width: 150px;
+    height: 120px;
     border-radius: 5px;
-    object-fit: cover;
-}
-
-.imagem-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
 }
 
 .imagem-info h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.preco {
-    font-size: 17px;
+.preco, .status {
     font-weight: bold;
-    color: #000000;
-}
-
-.status {
-    font-size: 16px;
-    color: #000000;
 }
 
 footer {
-    background: rgba(3, 3, 3, 0.562);
-    color: rgb(250, 250, 250);
+    background: #222;
+    color: #fff;
     text-align: center;
-    padding: 5px;
-    color: #ffffff;
+    padding: 10px;
 }
 
-
-
-@media (max-width: 1024px) and (min-width: 601px) {
-    .header-left {
-        gap: 15px;
-    }
-
-    .search-bar {
-        width: 200px; 
-    }
-
+@media (max-width: 768px) {
     .header-right {
-        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .nav-btn, .login-btn {
-        padding: 10px 20px;
-        font-size: 14px; 
+        width: 100%;
+        max-width: 200px;
     }
-}
 
-@media (max-width: 700px) {
-    .search-bar {
-        width: 60%; 
+    .imagem-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagem-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-option {
+        width: 45%;
+    }
+
+    .hero-imagem {
+        height: 300px;
     }
 }

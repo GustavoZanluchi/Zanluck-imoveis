@@ -51,14 +51,16 @@ header {
     font-size: 1rem;
     border-radius: 13px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: #3498db;
     font-weight: bold;
 }
 
 .login-btn:hover {
     background-color: #4da4df;
+    transform: translateY( -4px);
 }
+
 .hero-imagem {
     background-image: url('imagens/casas\ interior\ 1.jpg');
     background-size: cover;
@@ -102,7 +104,7 @@ header {
     padding: 12px;
     font-size: 1rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; 
 }
 
 .search-buttons {
@@ -154,11 +156,13 @@ header {
     font-size: 1rem; 
     border: none; 
     cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold; 
 }
 
-.search-button.buscar-imoveis:hover {
+.search-button:hover {
     background-color: #4da4df;
+    transform: translateY( -4px);
 }
 
 .buscar-imoveis {
@@ -166,45 +170,110 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    padding: 40px 5%;
+    padding: 20px;
+    gap: 20px;
 }
 
 .imagem-box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.botao-imagens {
+    background-color: #3498db;
+    color: white;
+    padding: 17px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.botao-imagens:hover {
+    background-color: #4da4df;
+    transform: translateY( -4px);
 }
 
 .imagem-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: white;
     border-radius: 10px;
     border: 1px solid #ccc;
+    padding: 3px;
+    margin: 10px;
     width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    gap: 20px;
+    height: 500px;
+    max-width: 520px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.438);
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .imagem-box:hover {
-    background-color: #302f2f50;
+    background-color: #ffffff;
+    transform: translateY(-6px);
 }
 
 .imagem-box img {
-    width: 150px;
-    height: 120px;
-    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.imagem-info h3 {
-    margin-bottom: 5px;
+.imagem-box img:hover {
+    opacity: 0.7;
 }
 
-.preco, .status {
+.imagem-box .info {
+    padding: 15px;
+}
+
+.imagem-box .info h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.imagem-box .info p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #444;
+}
+
+.imagem-box .price {
+    font-size: 18px;
     font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+}
+
+.imagem-box .icons {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #eee;
+    padding: 10px;
+    background-color: #fafafa;
+    font-size: 12px;
+    text-align: center;
+}
+
+.imagem-box .icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {

@@ -52,17 +52,17 @@ header {
     border-radius: 13px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    background-color: #3498db;
+    background-color: #fd9800;
     font-weight: bold;
 }
 
 .login-btn:hover {
-    background-color: #4da4df;
+    background-color: #fc893d;
     transform: translateY( -4px);
 }
 
 .hero-imagem {
-    background-image: url('imagens/casas\ interior\ 1.jpg');
+    background-image: url('imagens/fundo\ fite\ \(2\).jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -149,7 +149,7 @@ header {
 }
 
 .search-button {
-    background-color: #3498db;
+    background-color: #fd9800;
     color: white;
     padding: 17px 40px; 
     border-radius: 12px; 
@@ -161,7 +161,7 @@ header {
 }
 
 .search-button:hover {
-    background-color: #4da4df;
+    background-color: #fc893d;
     transform: translateY( -4px);
 }
 
@@ -187,7 +187,7 @@ main {
 }
 
 .botao-imagens {
-    background-color: #3498db;
+    background-color: #fd9800;
     color: white;
     padding: 17px 40px;
     border: none;
@@ -201,7 +201,7 @@ main {
 }
 
 .botao-imagens:hover {
-    background-color: #4da4df;
+    background-color: #fc893d;
     transform: translateY( -4px);
 }
 
@@ -258,6 +258,16 @@ main {
     font-weight: bold;
     color: #111;
     margin: 10px 0;
+}
+
+.endereco {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h3 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .imagem-box .icons {

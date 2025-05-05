@@ -62,7 +62,7 @@ header {
 }
 
 .hero-imagem {
-    background-image: url('imagens/fundo\ fite\ \(2\).jpg');
+    background-image: url('imagens/fundo\ do\ site\ \(3\).jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -100,11 +100,39 @@ header {
 
 .search-bar {
     width: 100%;
-    max-width: 1200px;
-    padding: 12px;
+    max-width: 1500px;
+    padding: 15px;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid #cccccc00; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.search-bar-codigo {
+    width: 100%;
+    max-width: 240px;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #cccccc00; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.search-bar-area {
+    width: 100%;
+    max-width: 240px;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ffffff00; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.search-bar-codigo:focus, .search-bar-area:focus {
+    outline: none; 
+    box-shadow: none; 
     border: 1px solid #ccc; 
+    background-color: #f0f0f0; 
 }
 
 .search-buttons {
@@ -112,19 +140,20 @@ header {
     flex-wrap: wrap; 
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 5px;
+    gap: 10px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .search-option {
-    padding: 10px;
+    padding: 14px;
     background: white;
-    border-radius: 7px;
-    border: 1px solid #cccccc00;
+    border-radius: 12px;
+    border: 1px solid #ffffff00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
-    width: 180px;
+    width: 240px;
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
@@ -132,10 +161,11 @@ header {
 
 .top-search-text {
     font-size: 40px;
+    margin-top: -50px;
     color: white;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -151,8 +181,8 @@ header {
 .search-button {
     background-color: #fd9800;
     color: white;
-    padding: 17px 40px; 
-    border-radius: 12px; 
+    padding: 20px 30px; 
+    border-radius: 10px; 
     font-size: 1rem; 
     border: none; 
     cursor: pointer; 

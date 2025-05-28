@@ -22,7 +22,7 @@ header {
     padding: 10px 40px;
     height: 150px;
     background-color: white;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.329);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.329);
 }
 
 .header-left {
@@ -88,118 +88,85 @@ header {
     transform: translateY(-4px);
 }
 
-.search-title {
-    margin-top: 35px;
-    margin-left: 5%;
-    font-family: 'Cascadia Code', monospace;
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+.title {
+    position: relative;
+    margin-top: 10px;
+    left: 4.2%;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
+    z-index: 11;
 }
-
-.search-button-wrapper {
-    margin-left: 5%;
-    margin-top: 10px;
-    width: fit-content;
-}
-
-.central-search {
+.barra-pesquisa {
     position: relative;
+    top: 40%;
+    left: 0%;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1600px;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    z-index: 10;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    width: 90%;
-    padding: 2%;
+
 }
 
-.top-search-button {
+.barra-topo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
-    margin-top: 20px;
 }
 
-.search-bar {
-    width: 100%;
-    max-width: 1450px;
-    padding: 14px;
-    font-size: 1rem;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
 }
 
-.search-bar-codigo {
-    width: 100%;
-    max-width: 190px;
-    padding: 14px;
-    font-size: 1rem;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
-}
-
-.search-bar-area {
-    width: 100%;
-    max-width: 240px;
-    padding: 14px;
-    font-size: 1rem;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
-}
-
-.search-bar-codigo:focus, .search-bar-area:focus {
-    outline: none;
-    box-shadow: none;
+.campo {
+    flex: 1;
+    padding: 18px 20px;
     border: 1px solid #ccc;
-    background-color: #f0f0f0;
+    border-radius: 10px;
+    min-width: 120px;
+    font-size: 14px;
+    background-color: #f9f9f9;
 }
 
-.search-bnt {
-    padding: 14px;
-    background: #fd9800;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    font-size: 1rem;
+.campo.grande {
     width: 100%;
-    max-width: 190px;
-    cursor: pointer;
-    color: white;
-    text-align: center;
 }
-.search-bnt:hover {
+
+.btn-buscar {
+    background-color: #fd9800;
+    color: #ffffff;
+    padding: 12px 100px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-buscar:hover {
     background-color: #fc893d;
 }
 
-.search-inputs-wrapper {
+main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-top: 5px;
-    width: 100%;
-    max-width: 1450px;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
 }
 
-.search-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 15px;
-    width: 100%;
-    max-width: 1500px;
-    margin: 0;
-}
-
-.search-button {
+.button {
     margin-top: 8px;
     background-color: #fd9800;
     color: white;
@@ -212,41 +179,8 @@ header {
     width: fit-content;
 }
 
-.search-button:hover {
+.button:hover {
     background-color: #fc893d;
-}
-
-.search-subtitle {
-    margin-top: 5%;
-    margin-left: 5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.search-option {
-    padding: 14px;
-    background: white;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 231px;
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.buscar-imoveis {
-    font-weight: bold;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 20px;
-    gap: 20px;
 }
 
 .imagem-box-container {

@@ -29,30 +29,74 @@
     <button class="contato-btn">Contato</button>
   </div>
 </header>
-    <div class="search-title">
-        <p class="search-title">Resultado de Busca</p>
+    <div class="title">
+        <p class="title">Resultado de Busca</p>
     </div>
 
-    <div class="central-search">
-        <input type="text" class="search-bar" placeholder="Digite o nome da rua, bairro ou cidade">
-        
-        <div class="search-buttons">
-  <button class="search-option Finalidade">Finalidade</button>
-  <button class="search-option Categoria">Categoria</button>
-  <button class="search-option Cidade">Cidade</button>
-  <button class="search-option Bairro">Bairro</button>
-  <button class="search-option Preco">Preço</button>
-  <input type="text" class="search-bar-area" placeholder="Código">
+<div class="barra-pesquisa">
+  <input type="text" placeholder="Digite o nome da rua, bairro ou cidade" class="campo grande">
+
+  <div class="filtros">
+    <input list="finalidades" class="campo" placeholder="Finalidade">
+<datalist id="finalidades">
+  <option value="Comprar">
+  <option value="Alugar">
+</datalist>
+
+    <input list="categoria" class="campo" placeholder="Categoria">
+<datalist id="categoria">
+  <option value="Apartamento">
+  <option value="Área Comercial">                                                    
+  <option value="Área Rural">
+  <option value="Barracão">
+  <option value="Casa">
+  <option value="Chalé">
+  <option value="Chácara">
+  <option value="Galpão">
+  <option value="Kitnet"> 
+  <option value="Sítio">
+</datalist>
+
+    <input list="cidade" class="campo" placeholder="Cidade">
+<datalist id="cidade">
+  <option value="ARANDU - SP">
+  <option value="AVARE - SP">                                                    
+  <option value="CERQUEIRA CESAR - SP">
+  <option value="CORONEL MACEDO - SP">
+  <option value="FARTURA - SP">
+  <option value="HOLAMBRA - SP">
+  <option value="ITAI - SP">
+  <option value="ITATINGA - SP">
+  <option value="JUNDIAI - SP"> 
+  <option value="MACATUBA - SP">
+</datalist>
+
+<input list="bairro" class="campo" placeholder="Bairro">
+<datalist id="bairro">
+  <option value="Aeroporto">
+  <option value="Agua Branca">                                                    
+  <option value="Agua Branca II">
+  <option value="Bom Sucesso II">
+  <option value="Bôtanico">
+  <option value="Brabancia">
+  <option value="Costa Azul">
+  <option value="Costa Azul II">
+  <option value="Costa Azul III"> 
+  <option value="Di Fiori">
+</datalist>
+
+    <input type="text" class="campo" placeholder="Código">
+  </div>
+
+  <div class="filtros">
+    <input type="text" class="campo" placeholder="Dormitórios">
+    <input type="text" class="campo" placeholder="Banheiros">
+    <input type="text" class="campo" placeholder="Vagas de Garagem">
+    <input type="text" class="campo" placeholder="Área Mínima">
+    <input type="text" class="campo" placeholder="Área Máxima">
+    <button class="btn-buscar">Buscar</button>
+  </div>
 </div>
-
-        <div class="search-inputs-wrapper">
-        <input type="text" class="search-bar-area" placeholder="Dormitórios">
-        <input type="text" class="search-bar-area" placeholder="Banheiros">
-        <input type="text" class="search-bar-area" placeholder="Vagas de Garagem">
-        <input type="text" class="search-bar-area" placeholder="Área Máxima">
-        <input type="text" class="search-bar-area" placeholder="Área Minima">
-        <button class="search-bnt">Buscar</button>
-    </div>
     
 </div>
     
@@ -60,8 +104,8 @@
         <p class="search-subtitle">Exibição:</p>
     </div>
 
-    <div class="search-button-wrapper">
-      <button class="search-button ver-imoveis">Imóveis</button>
+    <div class="search-button">
+      <button class="button ver-imoveis">Imóveis</button>
     </div>
 
 <main>

@@ -11,48 +11,91 @@
 <body>
 
     <header>
-        <h1 class="logo">Zanluck Imóveis</h1>
-        <nav class="header-right">
-            <button class="nav-btn inicio">Início</button>
-            <button class="nav-btn quem-somos">Quem Somos</button>
-            <button class="nav-btn anuncie">Anuncie Conosco</button>
-            <button class="nav-btn comprar">Comprar</button>
-            <button class="nav-btn alugar">Alugar</button>
-            <button class="contato-btn contato">Contato</button> 
-        </nav>
-    </header>
+  <div class="header-left">
+    <div class="logo-container">
+      <img src="imagens/1.png" alt="Logotipo Zanluck" class="logo-img">
+    </div>
+  </div>
+
+  <div class="header-center">
+    <button class="nav-btn voltar">Início</button>
+    <button class="nav-btn">Quem Somos</button>
+    <button class="nav-btn anuncie">Anuncie Conosco</button>
+    <button class="nav-btn">Comprar</button>
+    <button class="nav-btn">Alugar</button>
+  </div>
+
+  <div class="header-right">
+    <button class="contato-btn">Contato</button>
+  </div>
+</header>
     
     <div class="hero-imagem"></div>
     
-    <div class="top-search-button">
-      <p class="top-search-text">Compre e Alugue com a Zanluck Imóveis</p>
-      <p class="top-search-subtext">Realizando Sonhos</p>
-    </div>
+<div class="barra-pesquisa">
+  <input type="text" placeholder="Digite o nome da rua, bairro ou cidade" class="campo grande">
 
-    <div class="search-button-wrapper">
-      <button class="search-button ver-imoveis">Ver todos os Imóveis</button>
-    </div>
-    <div class="central-search">
-        <input type="text" class="search-bar" placeholder="Digite o nome da rua, bairro ou cidade">
-        
-        <div class="search-buttons">
-            <button class="search-option Finalidade">Finalidade</button>
-            <button class="search-option Categoria">Categoria</button>
-            <button class="search-option Cidade">Cidade</button>
-            <button class="search-option Bairro">Bairro</button>
-            <button class="search-option Preco">Preço</button>
-            <input type="text" class="search-bar-codigo" placeholder="Código">
-        </div>
+  <div class="filtros">
+    <input list="finalidades" class="campo" placeholder="Finalidade">
+<datalist id="finalidades">
+  <option value="Comprar">
+  <option value="Alugar">
+</datalist>
 
-        <div class="search-buttons">
-          <input type="text" class="search-bar-area" placeholder="Dormitórios">
-          <input type="text" class="search-bar-area" placeholder="Banheiros">
-          <input type="text" class="search-bar-area" placeholder="Vagas de Garagem">
-          <input type="text" class="search-bar-area" placeholder="Área Máxima">
-          <input type="text" class="search-bar-area" placeholder="Área Minima">
-          <button class="search-bnt">Imóveis</button>
-        </div>
-    </div>
+    <input list="categoria" class="campo" placeholder="Categoria">
+<datalist id="categoria">
+  <option value="Apartamento">
+  <option value="Área Comercial">                                                    
+  <option value="Área Rural">
+  <option value="Barracão">
+  <option value="Casa">
+  <option value="Chalé">
+  <option value="Chácara">
+  <option value="Galpão">
+  <option value="Kitnet"> 
+  <option value="Sítio">
+</datalist>
+
+    <input list="cidade" class="campo" placeholder="Cidade">
+<datalist id="cidade">
+  <option value="ARANDU - SP">
+  <option value="AVARE - SP">                                                    
+  <option value="CERQUEIRA CESAR - SP">
+  <option value="CORONEL MACEDO - SP">
+  <option value="FARTURA - SP">
+  <option value="HOLAMBRA - SP">
+  <option value="ITAI - SP">
+  <option value="ITATINGA - SP">
+  <option value="JUNDIAI - SP"> 
+  <option value="MACATUBA - SP">
+</datalist>
+
+<input list="bairro" class="campo" placeholder="Bairro">
+<datalist id="bairro">
+  <option value="Aeroporto">
+  <option value="Agua Branca">                                                    
+  <option value="Agua Branca II">
+  <option value="Bom Sucesso II">
+  <option value="Bôtanico">
+  <option value="Brabancia">
+  <option value="Costa Azul">
+  <option value="Costa Azul II">
+  <option value="Costa Azul III"> 
+  <option value="Di Fiori">
+</datalist>
+
+    <input type="text" class="campo" placeholder="Código">
+  </div>
+
+  <div class="filtros">
+    <input type="text" class="campo" placeholder="Dormitórios">
+    <input type="text" class="campo" placeholder="Banheiros">
+    <input type="text" class="campo" placeholder="Vagas de Garagem">
+    <input type="text" class="campo" placeholder="Área Mínima">
+    <input type="text" class="campo" placeholder="Área Máxima">
+    <button class="btn-buscar">Buscar</button>
+  </div>
+</div>
     
     
     <div class="imagem-box-container">
@@ -60,71 +103,112 @@
     </div>
 
     <main>
-        <div class="imagem-box-container">
-            <div class="imagem-box">
-              <img src="imagens/casa (1).webp" alt="Imagem 1">
-              <div class="imagem-info">
-                <h3>Casa com 3 quartos</h3>
-                <p class="preco">R$: 3.000,00</p>
-                <p class="status">Aluga-se / Venda</p>
-                <p>Localizada no centro, com garagem e quintal.</p>
-              </div>
-            </div>
+  <div class="imagem-box-container">
 
-            <div class="imagem-box">
-              <img src="imagens/casa (2).avif" alt="Imagem 2">
-              <div class="imagem-info">
-                <h3>Apartamento 2 quartos</h3>
-                <p class="preco">R$: 2.500,00</p>
-                <p class="status">Aluga-se / Venda</p>
-                <p>Com sacada, vaga de garagem e elevador.</p>
-              </div>
-            </div>
+    <div class="imagem-box">
+      <div class="imagem-container">
+        <img src="imagens/casa (1).webp" alt="Casa com 3 quartos">
+        <span class="tag-venda">Aluga-se</span>
+      </div>
+      <div class="info">
+        <h3>Casa 4 Domitórios para alugar</h3>
+        <p class="endereco">Represa Jurumirim - Itaí</p>
+        <p>Ref.: 101</p>
+        <div class="price">R$ 3.000,00</div>
+      </div>
+      <div class="icons">
+        <div><span><strong>1</strong></span><p>Suíte(s)</p></div>
+        <div><span><strong>3</strong></span><p>Quarto(s)</p></div>
+      </div>
+    </div>
 
-            <div class="imagem-box">
-              <img src="imagens/casa (3).jpg" alt="Imagem 3">
-              <div class="imagem-info">
-                <h3>Sobrado 4 dormitórios</h3>
-                <p class="endereco">Rua do Sobrado Nº 123 - Brabância</p>
-                <p class="preco">R$: 4.200,00</p>
-                <p class="status">Aluga-se / Venda</p>
-                <p>Com piscina, churrasqueira e jardim amplo.</p>
-              </div>
-            </div>
+    <div class="imagem-box">
+      <div class="imagem-container">
+        <img src="imagens/casa (2).avif" alt="Apartamento 2 quartos">
+        <span class="tag-venda">Aluga-se / Venda</span>
+      </div>
+      <div class="info">
+        <h3>Apartamento 2 quartos</h3>
+        <p class="endereco">Bairro Novo</p>
+        <p>Ref.: 102</p>
+        <div class="price">R$ 2.500,00</div>
+      </div>
+      <div class="icons">
+        <div><span><strong>0</strong></span><p>Suíte(s)</p></div>
+        <div><span><strong>2</strong></span><p>Quarto(s)</p></div>
+      </div>
+    </div>
 
-            <div class="imagem-box">
-              <img src="imagens/casa (4).avif" alt="Imagem 4">
-              <div class="imagem-info">
-                <h3>Casa térrea 2 quartos</h3>
-                <p class="preco">R$: 3.800,00</p>
-                <p class="status">Aluga-se / Venda</p>
-                <p>Espaço gourmet, vaga para 2 carros.</p>
-              </div>
-            </div>
+    <div class="imagem-box">
+      <div class="imagem-container">
+        <img src="imagens/casa (3).jpg" alt="Sobrado 4 dormitórios">
+        <span class="tag-venda"> Venda</span>
+      </div>
+      <div class="info">
+        <h3>Sobrado 4 dormitórios</h3>
+        <p class="endereco">Rua do Sobrado - Brabância</p>
+        <p>Ref.: 123</p>
+        <div class="price">R$ 4.200.00000</div>
+      </div>
+      <div class="icons">
+        <div><span><strong>1</strong></span><p>Suíte(s)</p></div>
+        <div><span><strong>4</strong></span><p>Quarto(s)</p></div>
+      </div>
+    </div>
 
-            <div class="imagem-box">
-              <img src="imagens/casa (5).webp" alt="Imagem 4">
-              <div class="imagem-info">
-                <h3>Casa à venda, REPRESA JURUMIRIM, AVARÉ-SP</h3>
-                <P class="endereco">Rua do Sol Nº 200 - REPRESA JURUMIRIM</P>
-                <p class="preco">R$: 780.500,00</p>
-                <p class="status"> Venda</p>
-                <p>Espaço gourmet, Piscina, 2 quartos e 1 suite.</p>
-              </div>
-            </div>
+    <div class="imagem-box">
+      <div class="imagem-container">
+        <img src="imagens/casa (4).avif" alt="Casa térrea 2 quartos">
+        <span class="tag-venda">Aluga-se / Venda</span>
+      </div>
+      <div class="info">
+        <h3>Casa térrea 2 quartos</h3>
+        <p class="endereco">Vila Nova</p>
+        <p>Ref.: 104</p>
+        <div class="price">R$ 3.800,00</div>
+      </div>
+      <div class="icons">
+        <div><span><strong>0</strong></span><p>Suíte(s)</p></div>
+        <div><span><strong>2</strong></span><p>Quarto(s)</p></div>
+      </div>
+    </div>
 
-            <div class="imagem-box">
-              <img src="imagens/casa (6).jpeg" alt="Imagem 4">
-              <div class="imagem-info">
-                <h3>Casa térrea 2 quartos</h3>
-                <p class="preco">R$: 3.800,00</p>
-                <p class="status">Aluga-se / Venda</p>
-                <p>Espaço gourmet, vaga para 2 carros.</p>
-              </div>
-            </div>
+    <div class="imagem-box">
+      <div class="imagem-container">
+        <img src="imagens/casa (5).webp" alt="Casa à venda Represa Jurumirim">
+        <span class="tag-venda">Venda</span>
+      </div>
+      <div class="info">
+        <h3>Casa à venda, REPRESA JURUMIRIM, AVARÉ-SP</h3>
+        <p class="endereco">Rua do Sol Nº 200 - REPRESA JURUMIRIM</p>
+        <p>Ref.: 105</p>
+        <div class="price">R$ 780.500,00</div>
+      </div>
+      <div class="icons">
+        <div><span><strong>1</strong></span><p>Suíte(s)</p></div>
+        <div><span><strong>3</strong></span><p>Quarto(s)</p></div>
+      </div>
+    </div>
 
-        </div>
-    </main>
+    <div class="imagem-box">
+      <div class="imagem-container">
+        <img src="imagens/casa (6).jpeg" alt="Sítio com 5 dormitórios">
+        <span class="tag-venda">Venda</span>
+      </div>
+      <div class="info">
+        <h3>Sítio com 5 dormitórios à venda, SANTA BARBARA, ARANDU - SP</h3>
+        <p class="endereco">Santa Barbara, Arandu - SP</p>
+        <p>Ref.: 489</p>
+        <div class="price">R$ 15.000.000,00</div>
+      </div>
+      <div class="icons">
+        <div><span><strong>2</strong></span><p>Suíte(s)</p></div>
+        <div><span><strong>3</strong></span><p>Quarto(s)</p></div>
+      </div>
+    </div>
+
+  </div>
+</main>
 
     <footer>© 2025 - Todos os direitos reservados</footer>
 

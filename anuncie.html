@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zanluck Imóveis</title>
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="anuncie.css">
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+    <div class="logo-container">
+        <img src="imagens/1.png" alt="Logotipo Zanluck" class="logo-img">
+    </div>
+    </div>
+
+    <div class="header-center">
+    <button class="nav-btn voltar">Início</button>
+    <button class="nav-btn">Quem Somos</button>
+    <button class="nav-btn anuncie">Anuncie Conosco</button>
+    <button class="nav-btn">Comprar</button>
+    <button class="nav-btn">Alugar</button>
+    </div>
+
+    <div class="header-right">
+    <button class="contato-btn">Contato</button>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+    <h2>Anuncie seu Imóvel Conosco</h2>
+
+    <form id="form-imovel">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="Telefone">Telefone</label>
+        <input type="text" id="Telefone" name="Telefone" placeholder="(00) 0000-0000" required />
+
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="exemplo@gmail.com" required />
+
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required />
+
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Rua " />
+
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" />
+
+        <label for="imovel">Informações do Imóvel</label>
+        <select id="imovel" name="info_do_imovel" required>
+        <option value="">Selecione o Imóvel</option>
+        <option value="APARTAMENTO">Apartamento</option>
+        <option value="CASA">Casa</option>
+        <option value="CHALÉ-POUSADA">Chalé-Pousada</option>
+        <option value="COMERCIAL">Comercial</option>
+        <option value="ESCRITÓRIO">Escritório</option>
+        <option value="FLAT">Flat</option>
+        <option value="GALPÃO/BARRACÃO">Galpão/Barracão</option>
+        <option value="GARAGEM">Garagem</option>
+        <option value="KITNET">Kitnet</option>
+        <option value="LOJA">Loja</option>
+        <option value="LOTE">Lote</option>  
+        <option value="POUSADA">Pousada</option>
+        <option value="QUIOSQUE">Quiosque</option>
+        <option value="SALA COMERCIAL">Sala Comercial</option>
+        <option value="SÍTIO/CHÁCARA">Sítio / Chácara</option>  
+        <option value="TERRENO">Terreno</option>         
+        </select>
+
+        <button type="submit" class="anuncie-btn">ANUNCIAR</button>
+    </form>
+
+    <div id="lista-imoveis"></div>
+    </div>
+</main>
+
+<footer>© 2025 - Todos os direitos reservados</footer>
+
+<script src="java.js"></script>
+</body>
+</html>

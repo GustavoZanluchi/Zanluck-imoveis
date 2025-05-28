@@ -1,0 +1,226 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.container {
+    align-items: center;    
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.384);
+}
+
+.container input, .container select {
+    padding: 6px 20px;       
+    font-size: 1rem;       
+    height: 36px;            
+    margin-bottom: 10px;     
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.imovel-card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.btn-deletar {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-deletar:hover {
+    background-color: darkred;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 1.2rem; 
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block; 
+    }
+
+    input[type="text"] {
+    font-size: 16px;
+    padding: 14px;
+    width: 60rem; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    select {
+    font-size: 0.9rem;     
+    padding: 0.3rem 0.5rem; 
+    width: 5rem;           
+    border: 10px solid #ccc;
+    border-radius: 0.3rem;
+    background-color: #fff;
+}
+
+    select:required:invalid {
+    color: #999;
+    }
+
+    option {
+    color: #000;
+    }
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.anuncie-btn {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    padding: 12px;
+    color: white;
+    background-color: #fd9800;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.anuncie-btn:hover {
+    background-color: #fc893d;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.329);
+}
+
+.header-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.logo-img {
+    height: 400px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-btn, .contato-btn {
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    background: transparent;
+    color: black;
+}
+
+.nav-btn:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.contato-btn {
+    background-color: #fd9800;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.contato-btn:hover {
+    background-color: #fc893d;
+    transform: translateY(-4px);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+    margin: 20px;
+    padding: 20px;
+    }
+
+    h2 {
+    font-size: 20px;
+    }
+}

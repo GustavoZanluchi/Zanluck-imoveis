@@ -28,14 +28,41 @@ main {
     max-width: 1200px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.384);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.267);
+}
+
+.select-duplo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-wrapper select {
+    width: 400px;
 }
 
 .container input, .container select {
-    padding: 6px 20px;       
+    padding: 6px 20px; 
+    width: 400px;      
     font-size: 1rem;       
     height: 36px;            
-    margin-bottom: 10px;     
+    margin-bottom: 15px;     
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -166,7 +193,7 @@ header {
 .logo-img {
     height: 400px;
     object-fit: contain;
-    max-width: 100%;
+    width: auto;
 }
 
 .logo-container {
@@ -218,6 +245,11 @@ footer {
     .container {
     margin: 20px;
     padding: 20px;
+    }
+
+    .logo-img {
+    height: 400px;
+    width: auto;
     }
 
     h2 {

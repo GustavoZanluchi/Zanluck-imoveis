@@ -63,7 +63,9 @@ const imovel = {
     cpf: document.getElementById('cpf').value,
     endereco: document.getElementById('endereco').value,
     cidade: document.getElementById('cidade').value,
-    tipo: document.getElementById('imovel').value
+    tipo: document.getElementById('imovel').value,
+    finalidade: document.getElementById('finalidade').value,
+    descricao: document.getElementById('descricao').value
 };
 
 imoveis.push(imovel);
@@ -91,6 +93,8 @@ imoveis.forEach((imovel, index) => {
         <p><strong>Endereço:</strong> ${imovel.endereco}</p>
         <p><strong>Cidade:</strong> ${imovel.cidade}</p>
         <p><strong>Tipo:</strong> ${imovel.tipo}</p>
+        <p><strong>Finalidade:</strong> ${imovel.finalidade}</p>
+        <p><strong>Descrição:</strong> ${imovel.descricao}</p>
     </div>
     `;
 });

@@ -48,7 +48,7 @@ header {
 .logo-img {
     height: 400px;
     object-fit: contain;
-    max-width: 100%;
+    width: auto;
 }
 
 .logo-container {
@@ -88,30 +88,51 @@ header {
     transform: translateY(-4px);
 }
 
-.title {
-    position: relative;
-    margin-top: 10px;
-    left: 4.2%;
-    font-size: 2rem;
+.login-btn {
+    background-color: #fd9800;
+    border: 2px solid;
+    color: #ffffff;
+    font-size: 1rem;
     font-weight: bold;
-    color: #333;
-    z-index: 11;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.barra-pesquisa {
-    position: relative;
-    top: 40%;
-    left: 0%;
-    background: rgba(255, 255, 255, 0);
-    border-radius: 12px;
-    width: 100%;
-    max-width: 1600px;
-    padding: 50px 25px;
-    display: flex;
-    flex-direction: column; 
-    gap: 15px; 
-    z-index: 10;
-    margin: 0 auto;
 
+.login-btn:hover {
+    background-color: #fd9800;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.hero-imagem {
+    position: relative; 
+    background-image: url('imagens/fundo do site (3).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-pesquisa {
+    position: absolute; 
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1600px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
 }
 
 .barra-topo {
@@ -166,29 +187,12 @@ main {
     gap: 20px;
 }
 
-.button {
-    margin-top: 8px;
-    background-color: #fd9800;
-    color: white;
-    padding: 13px 30px;
-    border-radius: 12px;
-    font-size: 0.9rem;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    width: fit-content;
-}
-
-.button:hover {
-    background-color: #fc893d;
-}
-
 .imagem-box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 30px 8px;
+    gap: 40px 8px;
     margin-top: 60px;
-    padding: 10px;
+    padding: 5px;
     justify-items: center;
 }
 
@@ -202,11 +206,12 @@ main {
     width: 100%;
     max-width: 550px;
     height: auto;
+    gap: 5px;
     min-height: 570px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.329);
     overflow: hidden;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 5px;
     font-family: Arial, sans-serif;
 }
@@ -253,7 +258,7 @@ main {
 }
 
 .imagem-box .info h3 {
-    font-size: 25px;
+    font-size: 16px;
     margin: 0 0 10px;
     font-weight: 600;
     color: #222;
@@ -333,5 +338,14 @@ footer {
     .imagem-box {
         max-width: 90%;
         margin: 0 auto;
+    }
+
+    .logo-img {
+        height: 400px;
+        width: auto;
+    }
+
+    .filtros {
+        flex-direction: column;
     }
 }

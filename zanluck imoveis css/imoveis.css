@@ -166,6 +166,16 @@ main {
     gap: 20px;
 }
 
+.subtitle {
+    position: relative;
+    top: 5px;
+    left: 8%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 11;
+}
+
 .button {
     margin-top: 8px;
     margin-left: 9rem;

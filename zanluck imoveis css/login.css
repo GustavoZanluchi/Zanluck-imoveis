@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: 'Cascadia Code', monospace;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e6e0e0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.432);
+}
+
+.header-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-img {
+    height: 400px;
+    object-fit: contain;
+    width: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-btn, .contato-btn {
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    background: transparent;
+    color: black;
+}
+
+.nav-btn:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.contato-btn {
+    background-color: #fd9800;
+    color: white;
+    transition: 0.3s;
+}
+
+.contato-btn:hover {
+    background-color: #fc893d;
+    transform: translateY(-4px);
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1rem;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#msg {
+    color: red;
+    margin-top: 0.5rem;
+}
